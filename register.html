@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="#">
+        <h2>Register</h2>
+        <div class="input-field">
+          <input type="text" required minlength="6" maxlength="18" />
+          <label>Enter your username</label>
+        </div>
+        <div class="input-field">
+          <input type="email" required />
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input
+            type="password"
+            id="password"
+            required
+            minlength="6"
+            maxlength="18"
+          />
+          <label>Enter your password</label>
+        </div>
+        <div class="input-field">
+          <input
+            type="password"
+            id="confirm password"
+            required
+            oninput="this.setCustomValidity(this.value !== password.value ? 'Mật khẩu không khớp!' : '')"
+          />
+          <label>Confirm your password</label>
+        </div>
+        <button type="submit">Register</button>
+        <div class="register">
+          <p>Have an account? <a href="signin.html">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
