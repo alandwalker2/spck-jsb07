@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   width: 100%;
   padding: 0 10px;
-  background: url("img/wallpaper6.jpg") no-repeat center center, black; /* Đổi \ thành / */
+  background: url("img/43523.jpg") no-repeat center center, black; /* Đổi \ thành / */
   background-size: cover;
 }
 
@@ -23,30 +23,7 @@ body::before {
   width: 100%;
   height: 100%;
   display: block;
-  background: url("img/wallpaper6.jpg") no-repeat center center, black; /* Thêm ảnh vào ::before */
-  background-size: cover;
-  z-index: -1;
-}
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100%;
-  padding: 0 10px;
-  background: url("img/wallpaper6.jpg") no-repeat center center, black; /* Đổi \ thành / */
-  background-size: cover;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: url("img/wallpaper6.jpg") no-repeat center center, black; /* Thêm ảnh vào ::before */
+  background: url("img/43523.jpg") no-repeat center center, black; /* Thêm ảnh vào ::before */
   background-size: cover;
   z-index: -1;
 }
@@ -67,11 +44,12 @@ form {
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: dark black;
+  font-variant-emoji: emoji;
 }
 .input-field {
   position: relative;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid white;
   margin: 15px 0;
 }
 .input-field label {
@@ -79,8 +57,8 @@ h2 {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  color: #fff;
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
   pointer-events: none;
   transition: 0.15s ease;
 }
@@ -146,6 +124,6 @@ button:hover {
   color: #fff;
 }
 
-.login p{
+.login p {
   margin-top: 15px;
 }
