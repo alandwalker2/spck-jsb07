@@ -268,3 +268,125 @@
     display: none;
   }
 }
+
+ul.list-unstyled li {
+  margin: 5px 0;
+}
+ul.list-unstyled a {
+  text-decoration: none;
+}
+/* subscrible-bõx */
+.subscribe-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.subscribe-box h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-container button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.input-container button:hover {
+  background-color: #333;
+}
+
+.subscribe-text {
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+}
+
+.subscribe-text strong {
+  font-weight: bold;
+  color: black;
+}
+/* Hiệu ứng cho nút Buy Now */
+.product-card .buy-now {
+  transition: all 0.3s ease;
+}
+
+.product-card .buy-now:hover {
+  transform: scale(1.1);
+}
+
+/* Hiệu ứng bóng mượt cho Navbar */
+.navbar.bg-dark {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar.bg-dark:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiệu ứng trượt mềm mại cho carousel */
+.carousel-item img {
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Cải thiện Subscribe Box bằng Gradient Background */
+.subscribe-box {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cải thiện Footer hoặc Social Icons */
+.icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Cải thiện Responsive Layout */
+@media (max-width: 500px) {
+  .product-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .subscribe-box {
+    max-width: 100%;
+  }
+}
