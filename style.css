@@ -101,6 +101,67 @@ h2 {
 .wrapper a:hover {
   text-decoration: underline;
 }
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 sản phẩm mỗi dòng */
+  gap: 15px; /* Khoảng cách giữa các sản phẩm */
+  margin: 0 auto;
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+}
+
+.product-card {
+  border: 1px solid #e0e0e0; /* Viền mỏng */
+  border-radius: 8px; /* Bo góc */
+  overflow: hidden; /* Ảnh không tràn ra ngoài */
+  transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Nhấc lên khi hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px; /* Chiều cao cố định */
+  object-fit: cover; /* Ảnh không bị méo */
+}
+
+.buy-now {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.buy-now:hover {
+  background-color: #e64a19; /* Màu đậm hơn khi hover */
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-info h3 {
+  font-size: 14px;
+  margin: 5px 0;
+  height: 40px; /* Giới hạn chiều cao tiêu đề */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
+  -webkit-box-orient: vertical;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff5722;
+  font-size: 16px;
+}
 button {
   background: #fff;
   color: #000;
